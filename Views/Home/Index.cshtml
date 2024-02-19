@@ -1,0 +1,16 @@
+﻿@model IEnumerable<DataBaseConnection.Models.Employee>
+
+<table class="table">
+    <tr>
+        <th>Employee Id</th>
+        <th>Employee Name</th>
+    </tr>
+    @foreach(var employee in Model)
+    {
+        <tr>
+            <td>@employee.EmployeeId</td>
+            <td>@employee.EmployeeName</td>
+        </tr>
+    }
+
+</table>
